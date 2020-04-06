@@ -1,7 +1,11 @@
-import { takeEvery, put, call, take } from 'redux-saga/effects';
+import { all, takeEvery, put, call, take } from 'redux-saga/effects';
 import imagesSaga from './imagesSaga';
+import statsSaga from './statsSaga';
+import statsReducer from '../reducers/statsReducer';
 
-export default imagesSaga;
+export default function* rootSaga() {
+    yield all([imagesSaga(), statsSaga()]);
+}
 // import { takeEvery, put, call, take } from 'redux-saga/effects';
 // import { IMAGES } from '../constants/index';
 // function* handleImagesLoad() {
