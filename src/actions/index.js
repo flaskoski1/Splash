@@ -1,9 +1,9 @@
 import { IMAGES } from '../constants/index';
 
-const loadImage = () => ({
+const loadImages = () => ({
     type: IMAGES.LOAD,
 });
-const setImage = images => ({
+const setImages = images => ({
     type: IMAGES.LOAD_SUCCESS,
     images,
 });
@@ -12,4 +12,4 @@ const setError = error => ({
     error,
 });
 
-export { loadImage, setImage, setError };
+export { loadImages, setImages, setError };
