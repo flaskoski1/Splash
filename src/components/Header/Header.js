@@ -1,7 +1,15 @@
 import React from 'react';
+import Button from '../Button/Button';
+import classes from './styles.css';
 
-import './styles.css';
-
-const Header = () => <header>What the Splash!</header>;
-
+const Header = () => (
+    <div style={{ textAlign: 'center' }}>
+        <Button style={{ display: 'inline', fontFamily: 'Pacifico' }}>
+            Home
+        </Button>
+        <header style={{ display: 'inline' }}>
+            <Button style={{ fontFamily: 'Pacifico' }}>We heart it !</Button>
+        </header>
+    </div>
+);
 export default Header;

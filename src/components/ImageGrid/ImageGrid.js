@@ -30,9 +30,10 @@ class ImageGrid extends Component {
                     {images.map(image => (
                         <div
                             key={image.id}
-                            className={`item item-${Math.ceil(
-                                image.height / image.width,
-                            )}`}
+                            //className={`item item-${Math.ceil(
+                            //    image.height / image.width,
+                            //)}`}
+                            className="item"
                         >
                             <Stats stats={imageStats[image.id]} />
                             <img

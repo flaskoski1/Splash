@@ -17,6 +17,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "moxios": "^0.4.0",
     "prettier": "^1.14.0"
   }
 }
